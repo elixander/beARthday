@@ -16,9 +16,9 @@
         <a-marker> -->
         <!-- <a-entity camera></a-entity> -->
         <a-assets>
-    		<a-asset-item id="plant-obj" src="./assets/eb_house_plant_01.obj"></a-asset-item>
-    		<a-asset-item id="plant-mtl" src="./assets/eb_house_plant_01.obj"></a-asset-item>
-    		<a-asset-item id="deer-obj" src="./assets/deer.obj"></a-asset-item>
+    		<a-asset-item id="plant-obj" src="assets/eb_house_plant_01.obj"></a-asset-item>
+    		<a-asset-item id="plant-mtl" src="assets/eb_house_plant_01.obj"></a-asset-item>
+    		<a-asset-item id="deer-obj" src="assets/deer.obj"></a-asset-item>
     	</a-assets>
 
     	<a-box position="0 0.25 0" width="0.5" height="0.5" depth="0.5" color="#EF2D5E">
@@ -29,6 +29,6 @@
 			<a-animation attribute="rotation" from="0 0 0" to="0 360 0" easing="linear" dur="5000" repeat="indefinite"></a-animation>
 		</a-obj-model>
  -->
-		<a-marker-camera preset="hiro" size="0.15"></a-marker-camera>
+		<a-marker-camera type="pattern" preset="custom" url="assets/bear-marker.patt" ratio="0.75" size="0.15"></a-marker-camera>
   	</a-scene>
 </body>
