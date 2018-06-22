@@ -5,30 +5,28 @@
 </head>
 <body>
 	<a-scene embedded arjs="sourceType: webcam;">
-		<!-- <a-sphere position="0 0.5 0" radius="0.5" color="#EF2D5E">
-			<a-animation attribute="radius" from="0.3" to="0.7" dur="1000" easing="ease-in-out" repeat="indefinite" direction="alternate"></a-animation>
-		</a-sphere> -->
-		<!-- <a-marker-camera preset='hiro'></a-marker-camera> -->
-
 		<!-- <a-marker preset="hiro">
             <a-entity geometry="primitive: torusKnot; radius: 0.3; radiusTubular: 0.05" position="0 0 0.25">
 			</a-entity>
         <a-marker> -->
         <!-- <a-entity camera></a-entity> -->
         <a-assets>
-    		<a-asset-item id="plant-obj" src="assets/eb_house_plant_01.obj"></a-asset-item>
-    		<a-asset-item id="plant-mtl" src="assets/eb_house_plant_01.obj"></a-asset-item>
-    		<a-asset-item id="deer-obj" src="assets/deer.obj"></a-asset-item>
+    		<a-asset-item id="cake" src="assets/cake.obj"></a-asset-item>
+    		<a-asset-item id="cake-mtl" src="assets/cake.mtl"></a-asset-item>
+    		<a-asset-item id="mountain" src="assets/mountain_tutorial.obj"></a-asset-item>
+    		<a-asset-item id="mountain-mtl" src="assets/mountain_tutorial.mtl"></a-asset-item>
     	</a-assets>
 
-    	<a-box position="0 0.25 0" width="0.5" height="0.5" depth="0.5" color="#EF2D5E">
-			<!-- <a-animation attribute="rotation" from="0 0 0" to="0 360 0" easing="linear" dur="1000" repeat="indefinite"></a-animation> -->
-		</a-box>
+    	<!-- <a-box position="0 0.25 0" width="0.5" height="0.5" depth="0.5" color="#EF2D5E">
+			<a-animation attribute="rotation" from="0 0 0" to="0 360 0" easing="linear" dur="1000" repeat="indefinite"></a-animation>
+		</a-box> -->
 
-		<!-- <a-obj-model position="0 -1 0" src="#deer-obj" scale="0.001 0.001 0.001">
-			<a-animation attribute="rotation" from="0 0 0" to="0 360 0" easing="linear" dur="5000" repeat="indefinite"></a-animation>
+		<a-obj-model position="0 0.25 0" src="#cake" mtl="#cake-mtl" >
 		</a-obj-model>
- -->
+
+		<!-- <a-obj-model position="0 0.25 0" src="#mountain" mtl="#mountain-mtl" scale="0.25 0.25 0.25">
+		</a-obj-model> -->
+
 		<a-marker-camera type="pattern" preset="custom" url="assets/bear-marker2.patt" ratio="0.75" size="0.15"></a-marker-camera>
   	</a-scene>
 </body>
